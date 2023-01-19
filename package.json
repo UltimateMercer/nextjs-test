@@ -8,7 +8,8 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
+    "ghpages": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -60,6 +61,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^6.1.2",
+    "gh-pages": "^4.0.0",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.0"
   },
