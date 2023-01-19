@@ -23,32 +23,25 @@ const Sidebar = () => {
           <div className=" block h-full">
             <div className="flex justify-between flex-col h-screen">
               <div className="text-center py-6 px-0">
-                {mounted &&
-                  (currentTheme === "dark" ? (
-                    <>
-                      <Link href="/">
-                        <Image
-                          src="/images/ultimate-logo-red.svg"
-                          className="mx-auto d-block"
-                          width={60}
-                          height={60}
-                          alt="Ultimate Mercer Logo"
-                        />
-                      </Link>
-                    </>
-                  ) : (
-                    <>
-                      <Link href="/">
-                        <Image
-                          src="/images/ultimate-logo-dark.svg"
-                          className="mx-auto d-block"
-                          width={60}
-                          height={60}
-                          alt="Ultimate Mercer Logo"
-                        />
-                      </Link>
-                    </>
-                  ))}
+                <Link href="/">
+                  <img
+                    src="/images/ultimate-logo-red.svg"
+                    className="mx-auto hidden dark:block"
+                    width="60"
+                    height="60"
+                    alt="Ultimate Mercer Logo"
+                  />
+                </Link>
+
+                <Link href="/">
+                  <img
+                    src="/images/ultimate-logo-dark.svg"
+                    className="mx-auto block dark:hidden"
+                    width="60"
+                    height="60"
+                    alt="Ultimate Mercer Logo"
+                  />
+                </Link>
               </div>
               <div className="block"></div>
               <div className="block">
