@@ -63,6 +63,7 @@ const securityHeaders = [
 
 module.exports = withBundleAnalyzer({
   basePath: "/nextjs-test",
+  assetPrefix: "/nextjs-test/",
   reactStrictMode: true,
   images: {
     domains: ["i.imgur.com", "miro.medium.com"],
